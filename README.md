@@ -2,7 +2,7 @@
 
 AI가 찾아주는 맞춤 선물 추천 서비스
 
-**배포:** https://vosam-gifty.vercel.app   
+**배포:** https://vosamm-gifty.vercel.app   
 
 ## 소개
 
