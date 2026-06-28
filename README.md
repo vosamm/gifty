@@ -2,6 +2,8 @@
 
 AI가 찾아주는 맞춤 선물 추천 서비스
 
+**배포:** https://vosam-gifty.vercel.app   
+
 ## 소개
 
 받는 사람의 취향 정보를 입력하면 Gemini 2.5 Flash + Google Search를 활용해 맞춤 선물을 추천해줍니다.
