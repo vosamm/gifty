@@ -81,7 +81,7 @@ export default function ResultPage() {
     setFormData(data);
     setExcluded(history);
     fetchRecommendations(data, history);
-  }, [router]);
+  }, []);
 
   const handleRecommendAgain = () => {
     if (!formData) return;

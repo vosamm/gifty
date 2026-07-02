@@ -12,7 +12,7 @@ export default function Home() {
     const history = getHistory(data.name.trim());
     sessionStorage.setItem('gifty_form', JSON.stringify(data));
     sessionStorage.setItem('gifty_history', JSON.stringify(history));
-    router.push('/result');
+    router.push(`/result?t=${Date.now()}`);
   };
 
   return (

@@ -68,7 +68,7 @@ export default function GiftForm({ onSubmit }: GiftFormProps) {
   const canProceedStep1 = form.name.trim() && form.age && form.relation;
   const canProceedStep2 = form.interests.trim();
   const canProceedStep3 = form.budget;
-  const canProceedStep4 = form.mood;
+  const canProceedStep4 = true;
 
   const handleSubmit = () => {
     if (canProceedStep4) {
@@ -170,8 +170,8 @@ export default function GiftForm({ onSubmit }: GiftFormProps) {
             <textarea
               value={form.interests}
               onChange={(e) => setField('interests', e.target.value)}
-              placeholder="예: 독서, 캠핑, 요리 배우기, 빈티지 소품 수집..."
-              rows={3}
+              placeholder="예: 독서, 캠핑, 요리 배우기, 빈티지 소품 수집... 졸업 선물이에요 / 최근에 이사를 했어요 등 추가 맥락도 함께 적어주세요!"
+              rows={4}
               className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#FF6B6B] transition-colors resize-none"
             />
           </div>
@@ -184,19 +184,6 @@ export default function GiftForm({ onSubmit }: GiftFormProps) {
               value={form.dislikes}
               onChange={(e) => setField('dislikes', e.target.value)}
               placeholder="예: 향수류, 너무 실용적인 것, 음식류..."
-              rows={2}
-              className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#FF6B6B] transition-colors resize-none"
-            />
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <label className="text-sm font-medium text-gray-700">
-              추가 맥락 <span className="text-gray-400 font-normal">(선택)</span>
-            </label>
-            <textarea
-              value={form.context}
-              onChange={(e) => setField('context', e.target.value)}
-              placeholder="예: 겨울 선물이에요 / 졸업 축하 선물 / 최근에 이사를 했어요..."
               rows={2}
               className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#FF6B6B] transition-colors resize-none"
             />

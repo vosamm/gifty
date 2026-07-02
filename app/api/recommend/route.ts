@@ -19,9 +19,8 @@ export async function POST(req: NextRequest) {
 - 이름: ${name}
 - 나이대: ${age}
 - 관계: ${relation}
-- 취미/관심사: ${interests}
+- 취미/관심사 및 추가 맥락: ${interests}
 - 싫어하는 것: ${dislikes || '없음'}
-- 추가 맥락: ${context || '없음'}
 - 예산: ${budget}
 - 원하는 분위기: ${mood}
 
